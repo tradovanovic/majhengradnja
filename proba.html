@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majhen gradnja</title>
+</head>
+<style>
+
+* {box-sizing: border-box;}
+        @media screen and (max-width: 600px) {
+            .header a{
+            float: none;
+                display: block;
+                width: 100%;
+                text-align: top;
+                margin-top: 5px;   
+            }
+            .sredisnji_dio{
+                height: auto;
+            }
+        
+            
+        }
+        
+      
+            
+            body {
+              background-color: #b4b4b4;
+              margin: 0;
+              
+            }
+        
+            .header {
+                position: fixed;
+                top: 0;                
+                background-color: #f1f1f1;
+                height: 150px;
+                width: 100%;
+                display: flex;
+                z-index: 1000;
+            }
+            .header-right {
+                float: right;
+               display: flow-root;
+               margin-top: 5%;
+        
+               
+                
+            }
+            
+            .header a {
+                
+                color: black;
+                text-align: center;
+                padding-right: 100px;
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px; 
+                text-transform: uppercase;
+                line-height: 25px;
+                border-radius: 4px;
+               
+                
+            }
+            .tekst {
+    position: relative;
+    display: inline-block; 
+}
+            .tekst::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 50%; 
+    height: 2px; 
+    background-color: rgb(0, 0, 0); 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.tekst:hover::after {
+    transform: scaleX(1);
+}
+          
+            .content {
+            padding-top: 12%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 100%;
+            margin-left: 3%;
+            
+                }
+            .img{
+                float: inline-start;
+                margin-left: 5%;
+                
+            }
+            .footer{
+                background-color: #090000;
+                height: 50px;
+                width: 100%;
+            }
+            .footer-centar{  
+                float: none;
+                text-align: center;
+            }
+            .footer a {
+                
+                color: rgb(255, 255, 255);
+                padding: 15px;
+                text-decoration: none;
+                font-size: 20px; 
+                border-radius: 4px;
+                line-height: 50px;
+                
+            }
+.container {
+  position: relative;
+  width: 50%;
+  display:flex;
+  flex: 1;
+}
+
+.image {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 450px;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #525b5e;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 20px;
+  opacity: 50%;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.sredisnji_dio{
+    background-color: #525b5e;
+    width: auto;
+    height: 550px;
+    
+      
+}
+.text_središnji{   
+    color: white;
+    text-align: center;
+    position: relative;
+    
+}
+.naslov{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.stupci{
+    box-sizing: border-box;
+    width: 100%;
+    column-count: 2;
+    color: white;
+    overflow: hidden;
+    float: left;
+}
+
+.left-column{
+    text-align: left;    
+        padding: 15px;
+        margin-left: 30%;
+}
+.right-column{
+    padding: 15px;
+    padding-left: auto;
+    border-left: 5px solid white;   
+}
+.crno-bijela{
+    filter: grayscale(100%) brightness(50%);
+    height: 30px;
+}
+.brojac {
+   
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+   font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    font-size: 50px;
+    padding-left: 25%;
+    
+}
+.kucalogo{
+    height: auto;
+    width: 120px;
+    color: white;
+    filter: invert(100%);
+    margin-left: 20%;
+    margin-bottom: -5%;
+}
+.count {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            color: white;
+            margin-left: 22%;
+            padding: none;
+            margin-top: -5%;
+        }
+        ul {
+  list-style-image:url(https://i.postimg.cc/2Lmg0Td0/pngegg.png)
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a><img style="height: 150px;margin-left: 50px;" src='https://i.postimg.cc/VLsMVT0s/Majhen-gradnja-removebg-preview.png' border='0' alt='Majhen gradnja'/></a>
+        <div  class="header-right">
+            <a class="tekst" href="naslovna1.html"><b>Početna</b></a>
+            <a class="tekst" href="onama.html"><b>O nama</b></a>
+            <a class="tekst" href="projekti.html"><b>Projekti</b></a> 
+            <a class="tekst" href="kontakt.html"><b>Kontakt</b></a>
+            
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <img src="https://simplex-gradnja.hr/wp-content/themes/creator-world-pro/images/slides/slider01.jpg" alt="Krov" class="image">
+            <div class="overlay">
+              <div class="text">Povjerenje</div>
+            </div>
+          </div>
+          
+          
+          <div class="container">
+            <img src="Krov MG.jpeg" alt="Povjerenje" class="image">
+            <div class="overlay">
+              <div class="text">Iskustvo</div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="https://www.cazin.net/sites/default/files/styles/large/public/firma.jpg?itok=DxNHXw2a" alt="Predanost" class="image">
+            <div class="overlay">
+              <div class="text">Predanost</div>
+            </div>
+          </div>
+    </div>
+
+    <div class="sredisnji_dio" style="float: ;">
+        <div class="text_središnji">
+        <h1>GRAĐEVINSKI POSLOVI</h1>
+        <H1 class="naslov">Izvođenje građevinskih radova</H1>
+        <p>Našim klijentima nudimo izvođenje raznih građevinskih radova te ostalih usluga vezanih u građevinu i uređenje</p>
+        </div>
+    <div class="stupci">
+        <div class="left-column">
+
+<ul>
+    <li>Betoniranje</li>
+    <li>Usluge zidanja</li>
+    <li>Dobava</li>
+</ul>
+
+        <h3><a><img class="crno-bijela"   src='https://i.postimg.cc/2Lmg0Td0/pngegg.png' border='0' alt='pngegg'/></a>Betoniranje i armiranje temeljne ploče <br>
+         <br>
+         <a><img class="crno-bijela"   src='https://i.postimg.cc/2Lmg0Td0/pngegg.png' border='0' alt='pngegg'/></a>Usluge zidanja <br> 
+        <br>
+        <a><img class="crno-bijela"   src='https://i.postimg.cc/2Lmg0Td0/pngegg.png' border='0' alt='pngegg'/></a>Dobava građevinskog materijala <br>
+        <br>
+        </h3>
+        </div>
+        <div class="right-column">
+        <h3>
+        <a><img class="crno-bijela"   src='https://i.postimg.cc/2Lmg0Td0/pngegg.png' border='0' alt='pngegg'/></a>Izrada krovnih konstrukcija i nadstrešnica <br>
+        <br>
+        <a><img class="crno-bijela"   src='https://i.postimg.cc/2Lmg0Td0/pngegg.png' border='0' alt='pngegg'/></a>Rušenje, demontaža i odvoz šute <br>
+        <br>
+        <a><img class="crno-bijela"   src='https://i.postimg.cc/2Lmg0Td0/pngegg.png' border='0' alt='pngegg'/></a>Postavljanje hidroizolacije <br>
+        <br>
+        </div>
+        </h3>
+    </div>
+
+    </div>
+    
+
+    <h2><strong  data-num="120">0</strong><br>broj projekata</h2>
+    <img class="kucalogo" src="Slike/kuća logo.png" alt="">
+
+    <h2><strong class="count" id="counter">0</strong><br>broj projekata</h2>
+
+    <script>
+        // Funkcija koja pokreće brojač od 0 do 50
+        function startCounter() {
+            var countElement = document.getElementById("counter");
+            var count = 0;
+
+            // Postavljanje intervala
+            var counterInterval = setInterval(function() {
+                count++; // Povećavanje brojača za 1
+                
+                // Ažuriranje teksta u elementu
+                countElement.textContent = count;
+
+                // Provjera je li brojač dostigao 50
+                if (count === 50) {
+                    clearInterval(counterInterval); // Zaustavljanje intervala
+                }
+            }, 100); // Interval u milisekundama (100ms = 0.1 sekundi)
+        }
+
+        // Pokretanje brojača nakon učitavanja stranice
+        window.addEventListener('load', startCounter);
+    </script>
+
+
+<div class="footer">
+        <div class="footer-centar" >
+            <a href="naslovna1.html">Početna</a>
+            <a href="onama.html">O nama</a>
+            <a href="projekti.html">Projekti</a> 
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+</div>
+  
+
+</body>
+</html>

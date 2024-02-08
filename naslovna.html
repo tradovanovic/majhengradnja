@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majhen gradnja</title>
+    <style>
+        * {box-sizing: border-box;}
+        
+        body {
+          background-color: #b4b4b4;
+          margin: 0; /* Dodano */
+        }
+
+        .header {
+            position: fixed;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            height: 150px;
+            width: 100%;
+            padding: 30px 20px;
+        }
+        
+        .header-right {
+            float: right;
+        }
+        
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-right: 150px;
+            text-decoration: none;
+            font-size: 20px; 
+            line-height: 25px;
+            border-radius: 4px;
+        }
+        
+        .header-right {
+            padding-top: 45px;
+        }
+        
+ .content {
+    padding-top: 200px;          
+        }
+        
+ 
+ .container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+
+  
+}
+.image {
+    flex: 1;
+    object-fit:contain;
+    display: block;
+    max-height: auto;
+    max-width: 500px;
+    border-radius: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  border-radius: 20px;
+  opacity: 50%;
+  overflow: hidden;
+  max-width: 100%;
+  height: 0;
+  transition: .5s ease;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href='logo' ><img src='https://i.postimg.cc/7fyrYbdh/Whats-App-Image-2024-02-02-at-00-34-39.jpg' border='0' alt='Whats-App-Image-2024-02-02-at-00-34-39'/></a>
+        <div class="header-right">
+            <span style="margin-left: 250px;"></span> 
+            <a class="active" href="#home">Početna</a>
+            <a href="#about">O nama</a>
+            <a href="#projekti">Projekti</a> 
+            <a href="#kontakt">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="content">
+    <div class="container">
+        <img class="image"  src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/122448762_184774603126870_2079243918763871256_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFwZYWzl3SGDg3-f1Yf9izQSUD7iwgYC9NJQPuLCBgL0zCUbzkAmtowVlJuXCsdSZ0eEbfI9uDBO2qwKVIx-PUk&_nc_ohc=2gmNfqp2vcoAX8fj4uO&_nc_ht=scontent-vie1-1.xx&oh=00_AfCKvMWSOawLUkoi16DtEdQK5yAjkBcWb6EoChScuwQFBQ&oe=65E5F93A" alt="Krov">
+        <div class="overlay">
+            <div class="text">Iskustvo</div>
+        </div>
+        <div class="container">
+            <img class="image" src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/122448762_184774603126870_2079243918763871256_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFwZYWzl3SGDg3-f1Yf9izQSUD7iwgYC9NJQPuLCBgL0zCUbzkAmtowVlJuXCsdSZ0eEbfI9uDBO2qwKVIx-PUk&_nc_ohc=2gmNfqp2vcoAX8fj4uO&_nc_ht=scontent-vie1-1.xx&oh=00_AfCKvMWSOawLUkoi16DtEdQK5yAjkBcWb6EoChScuwQFBQ&oe=65E5F93A" alt="Krov">
+            <div class="overlay">
+                <div class="text">Povjerenje</div>
+            </div>
+        </div>
+        
+            <div class="container"> 
+            <img class="image" src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/122448762_184774603126870_2079243918763871256_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFwZYWzl3SGDg3-f1Yf9izQSUD7iwgYC9NJQPuLCBgL0zCUbzkAmtowVlJuXCsdSZ0eEbfI9uDBO2qwKVIx-PUk&_nc_ohc=2gmNfqp2vcoAX8fj4uO&_nc_ht=scontent-vie1-1.xx&oh=00_AfCKvMWSOawLUkoi16DtEdQK5yAjkBcWb6EoChScuwQFBQ&oe=65E5F93A" alt="Krov">
+            <div class="overlay">
+                <div class="text">Brzina</div>
+            </div>
+        </div>
+        
+        
+    </div>
+    </div>
+    
+</body>
+</html>
